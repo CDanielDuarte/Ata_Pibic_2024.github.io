@@ -4,7 +4,7 @@ date: 2024-07-01
 categories: [Sequênciamento, RNA]
 image: rna-seq.png
 format:
-html:
+    html:
 
 ---
 

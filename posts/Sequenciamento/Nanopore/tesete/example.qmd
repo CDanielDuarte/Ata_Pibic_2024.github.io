@@ -1,9 +1,0 @@
----
-title: "Tesete Example"
----
-
-## Heading
-
-{{< tesete >}}
-
-
