@@ -1,0 +1,42 @@
+---
+title: "24.05.24"
+---
+
+# teste de criação de conteudo
+
+este aquivo é um teste de criação de aquivos no formato qmd, e ver sua interação. com outros arquivos.
+
+# Atualizações
+
+Eu consegui hoje, achar uma boa extenção do vim para o VS Code, o que vai facilitar o meu aprendizado de tanto do vim quanto do quarto
+
+# Descobertas
+
+Também estou descobrindo como usar o quarto direito, sua estrutura de projetos e arquivos, como o;
+:::
+ so se usa o -> quarto create, quando se quer criar um projeto mais complexo, o que ele faz é dar a estrutura o projeto mas eu posso fazer isso se eu quiser, so é necessário abri-lo no VS code pra renderiza-lo certinho
+:::
+
+# Coisas a terminar;
+
+1. Aprender como ver o preview HTLM sem o VS code, e redenrizar minha ata sem ele também.
+2. aprender a mudar foto e ajustar formatação da ata,
+3. aprender a fazer paginas mais organizadas na ata (no notion é tão mais fácil)
+4. criar o dockerfile/docker image pra installar o sigularity
+5. aprender a como copiar e colar no vim
+
+````{python}
+print('isso é so um codigo de teste pra ver se ta funcionando bem')
+````
+
+
+## novidades pós rodar o codigo
+
+no terminal quando eu cliquei no comando pra ver o preview apreceu algums comandos, talvez eu esteja errando em não passar o caminho completo do aquivo, por isso não está sendo
+
+```
+execute de novo e copie aqui pois não sei como copia e cola no vim
+
+```
+
+* O titulo do arquivo so aparece no blog quando vc clica nele, de resto, no painel vc so vê o primeiro harder 

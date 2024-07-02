@@ -1,0 +1,19 @@
+---
+title: "iris"
+author: "Carlos Daniel"
+date: "2024-05-27"
+categories: [testes, python]
+format: html  
+---
+# Objetivo
+
+Este é um aquivo que serivá para práticar o uso do `vim` e do `quarto` desta vez com um codigo em python, o qual será mais complexo do que o anterior
+
+````{python}
+! pip install seaborn
+import seaborn as sns
+iris = sns.load_dataset("iris")
+iris.head()
+
+sns.scatterplot(iris)
+````

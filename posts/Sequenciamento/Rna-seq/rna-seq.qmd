@@ -1,0 +1,13 @@
+---
+title: "Rna-seq"
+date: 2024-07-01
+categories: [Sequênciamento, RNA]
+image: rna-seq.png
+format:
+html:
+
+---
+
+# Sequênciamento de RNA
+
+O sequênciamento de RNA..

@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Ata Bioinfo",
+    "section": "",
+    "text": "title: “About” image: profile.jpg about: template: jolla links: - icon: twitter text: Twitter href: https://twitter.com - icon: linkedin text: LinkedIn href: https://linkedin.com - icon: github text: Github href: https://github.com\n\n\n\nAbout this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ata Bioinfo",
+    "section": "",
+    "text": "24.05.24\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTesete Example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTeste de uso do quarto feito totalmente no vim\n\n\n\n\n\n\ntestes\n\n\nR\n\n\nquarto\n\n\n\n\n\n\n\n\n\nMay 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de teceira geração, PacBIO\n\n\n\n\n\n\nSequênciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequenciamento de primeira geração\n\n\n\n\n\n\nSequênciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 21, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 18, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de terceira geração / Nanopore\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFundamentos do NGS\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\niris\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 27, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R em formato .docx\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R em formato .pdf\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R em formato .pptx\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em python\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R\n\n\n\n\n\n\ntestes\n\n\nR\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\nNo matching items"
+  }
+]
