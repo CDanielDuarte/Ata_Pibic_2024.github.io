@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">about.html</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
@@ -156,16 +156,24 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="este-é-um-codigo-simples-em-r-para-testar-a-execusão-do-quarto" class="level1">
 <h1>Este é um codigo simples em R para testar a execusão do quarto</h1>
-<p>#````{r}</p>
-<p>show(“hello world”)</p>
-<p>library(ggplot2) summary(CO2)</p>
-<p>ggplot(CO2, aes(Treatment, uptake)) + geom_boxplot()</p>
 <pre><code>
-### por algum motivo infelizmente eu não consigo rodar o ggplot2 apenas chamando a biblioteca mãe, como o tydyverse. acontece um erro na execussão
+show("hello world")
+
+library(ggplot2)
+summary(CO2)
+
+ggplot(CO2, aes(Treatment, uptake)) +
+        geom_boxplot()
 </code></pre>
-<p>show(“hello world”)</p>
-<p>library(tydyverse) summary(CO2)</p>
-<p>ggplot(CO2, aes(Treatment, uptake)) geom_boxplot() ````</p>
+<section id="por-algum-motivo-infelizmente-eu-não-consigo-rodar-o-ggplot2-apenas-chamando-a-biblioteca-mãe-como-o-tydyverse.-acontece-um-erro-na-execussão" class="level3">
+<h3 class="anchored" data-anchor-id="por-algum-motivo-infelizmente-eu-não-consigo-rodar-o-ggplot2-apenas-chamando-a-biblioteca-mãe-como-o-tydyverse.-acontece-um-erro-na-execussão">por algum motivo infelizmente eu não consigo rodar o ggplot2 apenas chamando a biblioteca mãe, como o tydyverse. acontece um erro na execussão</h3>
+<pre><code>show("hello world")
+
+library(tydyverse)
+summary(CO2)
+
+ggplot(CO2, aes(Treatment, uptake)) 
+        geom_boxplot()</code></pre>
 <p>info_2024/posts/post-with-code/index.qmd –no-browser –no-watch-inputs ERROR: Error reading metadata from /home/daniel/ATA_bioinfo_2024/posts/post-with-code/index.qmd.</p>
 <p>can not read a block mapping entry; a multiline key may not be an implicit key at line 15, column 1:</p>
 <p>ERROR: YAMLError: can not read a block mapping entry; a multiline key may not be an implicit key at line 15, column 1:</p>
@@ -182,6 +190,7 @@ at parseWithNiceErrors (file:///opt/quarto/bin/quarto.js:19695:16)
 at readYamlFromMarkdown (file:///opt/quarto/bin/quarto.js:19635:26)</code></pre>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

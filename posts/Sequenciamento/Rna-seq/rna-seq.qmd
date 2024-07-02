@@ -2,10 +2,10 @@
 title: "Rna-seq"
 date: 2024-07-01
 categories: [Sequênciamento, RNA]
+author: Carlos Daniel M Duarte
 image: rna-seq.png
 format:
-    html:
-
+    html: default
 ---
 
 # Sequênciamento de RNA

@@ -1,0 +1,12 @@
+{
+  "hash": "be884413f929183bbd2bef764bbe5dc8",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Teste com condigo em python\"\nauthor: \"Carlos Daniel\"\ndate: \"2024-05-22\"\ncategories: [testes, python]\nformat: html\nimage: python_logo.png\n---\n\n\n\n\n# olá mundo\n\n::: {#2758663b .cell execution_count=1}\n``` {.python .cell-code}\nprint('hello world')\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nhello world\n```\n:::\n:::\n\n\ndaniel@DESKTOP-J3U8KOO:~/ATA_bioinfo_2024$ quarto preview\nTerminating existing preview server....DONE\n\nPreparing to preview\n\nWatching files for changes\nBrowse at http://localhost:5941/\n/usr/bin/xdg-open: 882: x-www-browser: not found\n/usr/bin/xdg-open: 882: firefox: not found\n/usr/bin/xdg-open: 882: iceweasel: not found\n/usr/bin/xdg-open: 882: seamonkey: not found\n/usr/bin/xdg-open: 882: mozilla: not found\n/usr/bin/xdg-open: 882: epiphany: not found\n/usr/bin/xdg-open: 882: konqueror: not found\n/usr/bin/xdg-open: 882: chromium: not found\n/usr/bin/xdg-open: 882: chromium-browser: not found\n/usr/bin/xdg-open: 882: google-chrome: not found\n/usr/bin/xdg-open: 882: www-browser: not found\n/usr/bin/xdg-open: 882: links2: not found\n/usr/bin/xdg-open: 882: elinks: not found\n/usr/bin/xdg-open: 882: links: not found\n/usr/bin/xdg-open: 882: lynx: not found\n/usr/bin/xdg-open: 882: w3m: not found\nxdg-open: no method available for opening 'http://localhost:5941/'\nGET: /\n\n",
+    "supporting": [
+      "teste_py_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

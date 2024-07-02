@@ -10,7 +10,7 @@ format: "html"
 # Este é um codigo simples em R para testar a execusão do quarto
 
 
-#````{r}
+````
 
 show("hello world")
 
