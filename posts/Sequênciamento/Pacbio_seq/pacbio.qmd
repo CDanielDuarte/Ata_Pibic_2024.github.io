@@ -1,7 +1,7 @@
 ---
 title: "Sequênciamento de teceira geração, PacBIO"
 date: 2024/06/25
-categories: [Sequênciamento]
+categories: [Sequenciamento]
 format: 
   html: default
   #: default
