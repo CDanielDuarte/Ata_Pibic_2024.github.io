@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-06-03">
+
+<title>Fundamentos do NGS – Ata Bioinfo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Ata Bioinfo</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Fundamentos do NGS</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Sequenciamento</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 3, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><a href="https://www.youtube.com/watch?v=uKCCIAhLFrU">texto baseado neste video do eduardo castan</a></p>
+<section id="introdução-ao-ngs-sequênciamento-de-segunda-geração" class="level1">
+<h1>introdução ao NGS / sequênciamento de Segunda geração</h1>
+<p>O NGS são algumas tecnicas de sequênciamento desenvolvidas e englobadas por duas pricipais empresas, <code>thermo-ficher e ilumina</code>. Apesar de se divergerem na tecnologia e patêntes, ambas as tecnologias possuem o mesmo fluxo de trabalho/princípio de funcionamento.</p>
+<section id="fluxo-de-trabalho-de-ngs" class="level2">
+<h2 class="anchored" data-anchor-id="fluxo-de-trabalho-de-ngs">Fluxo de trabalho de NGS</h2>
+<p>´´´ Preparo de biblioteca -&gt; Amplificação -&gt; Sequênciamento -&gt; Análise ´´´</p>
+</section>
+</section>
+<section id="geração-de-biblioteca" class="level1">
+<h1>Geração de biblioteca</h1>
+<p>Essa é uma etapa comum aos sequênciamentos de ácidos núcleicos, etapa a qual é responsavel por preparar a amostra para que ela seja compatível a tecnologia.</p>
+</section>
+<section id="amplificação" class="level1">
+<h1>Amplificação</h1>
+<p>As tecnologias necessitam amplificar os fragmentos de DNA para que o equipamento possa alcançar a sensibilidade necessária para a o sequênciamento</p>
+</section>
+<section id="sequênciamento" class="level1">
+<h1>Sequênciamento</h1>
+<p>Está é a etapa a qual o equipamento consegue ler / destinguir as bases em sequência correta que estão no genoma</p>
+</section>
+<section id="analise" class="level1">
+<h1>Analise</h1>
+<p>Está é a etapa de análise dos dados gerados pelo sequênciamento</p>
+</section>
+<section id="preparo-de-biblioteca" class="level1">
+<h1>preparo de biblioteca</h1>
+<section id="gerar-fragmentos" class="level3">
+<h3 class="anchored" data-anchor-id="gerar-fragmentos">Gerar fragmentos</h3>
+<p>Existem uma limitação na tecnica, ela não consegue sequenciar fragmetos muito grandes &gt; 600pb. Apenas de 200-250pb. Por isso é necessário fragmentar esse genôme, com enzimas, sonicação ou <code>pcr</code>. Está pcr é uma super multiplex, que consegue pegar todos o genes</p>
+</section>
+<section id="adicionar-adaptadores-nas-extremidades-dos-fragmentos" class="level3">
+<h3 class="anchored" data-anchor-id="adicionar-adaptadores-nas-extremidades-dos-fragmentos">Adicionar adaptadores nas extremidades dos fragmentos</h3>
+<p>é adicionado um dna dupla fita nas extremidades dos fragmentos, e são ligados por DNAliagese</p>
+</section>
+<section id="adicionar-marcadore-de-amostra" class="level3">
+<h3 class="anchored" data-anchor-id="adicionar-marcadore-de-amostra">Adicionar marcadore de amostra</h3>
+<ul>
+<li>thermofish = barcode</li>
+<li>ilumina = index</li>
+</ul>
+<p>vem nos adaptadores, e são sequencias expecíficas que serve para separar as amostras mesmo fazendo uma reação em um tubo so.</p>
+</section>
+</section>
+<section id="amplificação-1" class="level1">
+<h1>Amplificação</h1>
+<p>Apartir desse momento as tecnologias de diferen em relação a amplificação da amostra</p>
+<section id="ilumina" class="level2">
+<h2 class="anchored" data-anchor-id="ilumina">Ilumina</h2>
+<p>A tecnica de amplificação da ilumina é baseada em uma <code>pcr em ponte</code> uma forma de pcr a qual em um chip com uma região complementar aos adaptadores presentes no fragmento, assim fixando verticalmente o fragmento ao chip. Neste local é realizado a amplificação do alvo com a pcr e como há diversas dessas regiões complemntares espalhadas ao longo do chip, é criado uma ponte durante a amplificação, tornando possível a detecção de florecencia de nucleotídeos adaptados para emitir uma florecencia expecífica ao passo que a pcr avança, permitindo assim ao sequênciamento pois a tecnologia da ilumina se baseaia na emissão de um sinal de florecência. com este método é possivel gerar um sinal forte o suficiente para ser detectável</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="data:image/png;base64,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" class="img-fluid figure-img"></p>
+<figcaption>PCR em ponte</figcaption>
+</figure>
+</div>
+<p>O fragmento de dna fica com o formato de ponte pois na superfície há primeres complementares ás sequências dos adaptadores, adicionados na parte de construção de bibliotecas com o primer ligado ao fragmento, durante os ciculos de pcrs, serão gerados novos fragmentos presos por pontes, as quais serão quebradas as ligações entre os primeres para ser aplificadas novamente, aumentando a superfície de florecência gerando assim <code>clusteres</code> de fragmentos.</p>
+</section>
+<section id="sequênciamento-1" class="level2">
+<h2 class="anchored" data-anchor-id="sequênciamento-1">Sequênciamento</h2>
+<p>Na tecnolgia da ilumina, devido o processo da pcr em ponte, é gerado fragmentos no sentido <code>5' -&gt; 3'</code> e <code>3' -&gt; 5'</code>, os quais são sequenciados, porém um sentido de fita de cada vez. Uma vez que temos os <strong>clusters</strong> é adicionados os nucleotídeos especiais, eles possuem um floróro com as cores das bases, semelhante ao sequenciamento de primeria geração, os quais eles florecem dentro dos clusteres e param a plimerização pela enzima Uma vez que a florecência é detectada, o bloqueio e a florecencia da base complementar a fita sequênciada é excluida da reação, possibilidando assim a adição de uma nova base e continuando a adição de nucleotídeos e sequenciando todo o fragmento.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/uploads/2018/08/NGS-300x300.jpg" class="img-fluid figure-img"></p>
+<figcaption>Florecência de clusteres</figcaption>
+</figure>
+</div>
+</section>
+<section id="amplificação-ion-torrent" class="level2">
+<h2 class="anchored" data-anchor-id="amplificação-ion-torrent">Amplificação Ion Torrent</h2>
+<p>A tecnologia de amplificação da thermo fisher é baseada em também uma pcr porém uma <code>pcr em emulção</code> esta pcr separa os fragmentos por missela. ou seja a ideia é separar apenas um fragmento e coloca-lo dentro de uma missela, junto com todos os materiasi necessários para sua amplificação. Em tubo com milhoes de misselas, dentro de cada uma o fragmento será amplificado preso a uma <code>bead</code> uma bolinha a qual têm centenas de primeres presos na sua superfície.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://clinicalsci.info/wp-content/uploads/2022/06/Pyrosequencing.png.webp" class="img-fluid figure-img"></p>
+<figcaption>Amplificação da thermo ficher</figcaption>
+</figure>
+</div>
+</section>
+<section id="seqênciamento-ion-torrent" class="level2">
+<h2 class="anchored" data-anchor-id="seqênciamento-ion-torrent">Seqênciamento Ion Torrent</h2>
+<p>Todas essas beads serão inseridas em um chip com 11 milhões de poços, os quais so cabem uma bead por poço. O sinal detectado pela maquina é a variação de Ph que é criado quando um nucleotídeo é incorporado pela dna polimeraze, sempre que acontece essa incorporação é liberado uma molécula de pirofostato e um atomo de hideogenio. o quê é detectável pela maquina. Isso é possivel pois a maquina consegue tira e botar um nucleotídeo por vez</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fpt.khanacademy.org%2Fscience%2Fap-biology%2Fgene-expression-and-regulation%2Freplication%2Fa%2Fmolecular-mechanism-of-dna-replication&amp;psig=AOvVaw19pi4q1dWSylL2CMD_OpD9&amp;ust=1719364126655000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBQQjRxqFwoTCNjm29LI9YYDFQAAAAAdAAAAABAE" class="img-fluid figure-img"></p>
+<figcaption>Incorporação de nucçeptídeo</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.researchgate.net/profile/Lev-Jardon-Barbolla/publication/268816439/figure/fig4/AS:295295213686789@1447415273772/Ion-Torrent-The-bead-libraries-derived-from-emulsion-PCR-are-deposited-into-a-chip.png" class="img-fluid figure-img"></p>
+<figcaption>Sequênciamento Thermo ficher</figcaption>
+</figure>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/Danie110001001109192912\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
