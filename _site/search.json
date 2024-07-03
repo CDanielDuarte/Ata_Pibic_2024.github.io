@@ -159,5 +159,26 @@
     "title": "Teste com condigo em R",
     "section": "",
     "text": "Este é um codigo simples em R para testar a execusão do quarto\n\nshow(\"hello world\")\n\nlibrary(ggplot2)\nsummary(CO2)\n\nggplot(CO2, aes(Treatment, uptake)) +\n        geom_boxplot()\n\n\npor algum motivo infelizmente eu não consigo rodar o ggplot2 apenas chamando a biblioteca mãe, como o tydyverse. acontece um erro na execussão\nshow(\"hello world\")\n\nlibrary(tydyverse)\nsummary(CO2)\n\nggplot(CO2, aes(Treatment, uptake)) \n        geom_boxplot()\ninfo_2024/posts/post-with-code/index.qmd –no-browser –no-watch-inputs ERROR: Error reading metadata from /home/daniel/ATA_bioinfo_2024/posts/post-with-code/index.qmd.\ncan not read a block mapping entry; a multiline key may not be an implicit key at line 15, column 1:\nERROR: YAMLError: can not read a block mapping entry; a multiline key may not be an implicit key at line 15, column 1:\nStack trace:\nat generateError (file:///opt/quarto/bin/quarto.js:10480:12)\nat throwError (file:///opt/quarto/bin/quarto.js:10483:11)\nat readBlockMapping (file:///opt/quarto/bin/quarto.js:11107:24)\nat composeNode (file:///opt/quarto/bin/quarto.js:11299:84)\nat readDocument (file:///opt/quarto/bin/quarto.js:11413:5)\nat loadDocuments (file:///opt/quarto/bin/quarto.js:11448:9)\nat load (file:///opt/quarto/bin/quarto.js:11453:23)\nat parse2 (file:///opt/quarto/bin/quarto.js:11463:12)\nat parseWithNiceErrors (file:///opt/quarto/bin/quarto.js:19695:16)\nat readYamlFromMarkdown (file:///opt/quarto/bin/quarto.js:19635:26)"
+  },
+  {
+    "objectID": "posts/git-github/git-github.html#adicionando-codigos-ao-stading",
+    "href": "posts/git-github/git-github.html#adicionando-codigos-ao-stading",
+    "title": "Git e Git hub",
+    "section": "Adicionando codigos ao stading",
+    "text": "Adicionando codigos ao stading\nO stading é um local o qual o codigo fica esperando para ser comitado, ou seja é uma pre salvagem de arquivo\ngit  add Nome-do-arquivo\ngit status # esse codigo mostrará as alterações"
+  },
+  {
+    "objectID": "posts/git-github/git-github.html#commit",
+    "href": "posts/git-github/git-github.html#commit",
+    "title": "Git e Git hub",
+    "section": "Commit",
+    "text": "Commit\nÈ o processo de verdadeiramente salvar as alterações do seu codigo no git\ngit commit -m \"A teg -m se refere a uma mensagem a qual será guardada junto com o codigo\""
+  },
+  {
+    "objectID": "posts/git-github/git-github.html#renomear-a-branch",
+    "href": "posts/git-github/git-github.html#renomear-a-branch",
+    "title": "Git e Git hub",
+    "section": "Renomear a branch",
+    "text": "Renomear a branch\ngit branch -M \"main\""
   }
 ]
