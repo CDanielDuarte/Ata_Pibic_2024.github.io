@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Carlos Daniel">
-<meta name="dcterms.date" content="2024-05-27">
+<meta name="dcterms.date" content="2024-06-25">
 
-<title>iris – Posts</title>
+<title>Sequenciamento de primeira geração – Ata Bioinfo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -115,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Posts</span>
+    <span class="navbar-title">Ata Bioinfo</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -138,10 +103,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../Testes.qmd"> 
-<span class="menu-text">testes</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -153,10 +114,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">iris</h1>
+      <h1 class="title">Sequenciamento de primeira geração</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">testes</div>
-                <div class="quarto-category">python</div>
+                <div class="quarto-category">Sequênciamento</div>
               </div>
                   </div>
   </div>
@@ -164,17 +124,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Carlos Daniel </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 27, 2024</p>
+        <p class="date">June 25, 2024</p>
       </div>
     </div>
     
@@ -193,41 +147,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="objetivo" class="level1">
-<h1>Objetivo</h1>
-<p>Este é um aquivo que serivá para práticar o uso do <code>vim</code> e do <code>quarto</code> desta vez com um codigo em python, o qual será mais complexo do que o anterior</p>
-<div id="9dd9c2f6" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span> pip install seaborn</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>iris <span class="op">=</span> sns.load_dataset(<span class="st">"iris"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>iris.head()</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Defaulting to user installation because normal site-packages is not writeable
-Requirement already satisfied: seaborn in /home/daniel/.local/lib/python3.10/site-packages (0.13.2)
-Requirement already satisfied: numpy!=1.24.0,&gt;=1.20 in /home/daniel/.local/lib/python3.10/site-packages (from seaborn) (1.26.4)
-Requirement already satisfied: pandas&gt;=1.2 in /home/daniel/.local/lib/python3.10/site-packages (from seaborn) (2.2.2)
-Requirement already satisfied: matplotlib!=3.6.1,&gt;=3.4 in /home/daniel/.local/lib/python3.10/site-packages (from seaborn) (3.9.0)
-Requirement already satisfied: contourpy&gt;=1.0.1 in /home/daniel/.local/lib/python3.10/site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (1.2.1)
-Requirement already satisfied: fonttools&gt;=4.22.0 in /home/daniel/.local/lib/python3.10/site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (4.51.0)
-Requirement already satisfied: pyparsing&gt;=2.3.1 in /usr/lib/python3/dist-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (2.4.7)
-Requirement already satisfied: python-dateutil&gt;=2.7 in /home/daniel/.local/lib/python3.10/site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (2.9.0.post0)
-Requirement already satisfied: packaging&gt;=20.0 in /home/daniel/.local/lib/python3.10/site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (24.0)
-Requirement already satisfied: pillow&gt;=8 in /home/daniel/.local/lib/python3.10/site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (10.3.0)
-Requirement already satisfied: cycler&gt;=0.10 in /home/daniel/.local/lib/python3.10/site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (0.12.1)
-Requirement already satisfied: kiwisolver&gt;=1.3.1 in /home/daniel/.local/lib/python3.10/site-packages (from matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (1.4.5)
-Requirement already satisfied: pytz&gt;=2020.1 in /home/daniel/.local/lib/python3.10/site-packages (from pandas&gt;=1.2-&gt;seaborn) (2024.1)
-Requirement already satisfied: tzdata&gt;=2022.7 in /home/daniel/.local/lib/python3.10/site-packages (from pandas&gt;=1.2-&gt;seaborn) (2024.1)
-Requirement already satisfied: six&gt;=1.5 in /usr/lib/python3/dist-packages (from python-dateutil&gt;=2.7-&gt;matplotlib!=3.6.1,&gt;=3.4-&gt;seaborn) (1.16.0)</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
+<section id="sequênciamento-de-primeria-geração-sequênciamento-sanger" class="level1">
+<h1>Sequênciamento de primeria geração / Sequênciamento sanger</h1>
+<p>A tecnologia é baseada em <code>dideox nucleotídeo</code> nucleotídeo o qual provoca o travamento da sinstese da fita no momento o qual ele é adicionado. gerando assim, vários fragmentos de um mesmo alvo, fragmentos os quais indicam exatamente onde tal nucleotídeo foi incorporado na reação.</p>
+<p><img src="https://bioinfo.com.br/wp-content/uploads/2021/05/word-image-1.png" class="img-fluid" alt="Quebra de polimerização"> Se botarmos 4 tubos com apenas um dos nucelotideos necessário para polimerização e corrermos em um gel, teremos todos os fragmentos possíveis do alvo e a localização de onde está cada nucleotídeo presente na amostra</p>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="iris_files/figure-html/cell-2-output-2.png" width="558" height="411" class="figure-img"></p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe70leVkvQnXkjZtIlKpXitnnEbUsAYEhHrg&amp;s.png" class="img-fluid figure-img"></p>
+<figcaption>Fragmentos corridos no gel</figcaption>
 </figure>
 </div>
+</section>
+<section id="sequênciamento-sanger-por-capilares" class="level1">
+<h1>Sequênciamento sanger por capilares</h1>
+<p>Este método era usado antigamente porém hoje em dia é feito de uma maneira mais eficiente. Aos dideox-nucleotídeos presentes foi adicionados a um floroóroro, assim todos os fragmentos gerados pela interrupção da sintese da fita estão marcados por uma florecência expecífica para cada base. Assim dispensando a necessidade de fazer a reação em tubos separados e ter 4 poços no gel de eletroforese.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="data:image/jpeg;base64,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" class="img-fluid figure-img"></p>
+<figcaption>Dideox-nucleodídeos com floróros</figcaption>
+</figure>
 </div>
+<p>Todos os fragmetos estarão separados e indentificados pela florêcencia. Porém essa eletroforese é feito em um <code>capilar</code> o qual é um fio, um polímero o qual cria em efeitos práticos a mesma coisa</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/CE_Basic.jpg" class="img-fluid figure-img"></p>
+<figcaption>Eletroforese com capilar</figcaption>
+</figure>
 </div>
 
 
@@ -326,7 +271,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/79c0f4d8-e357-46b0-aee7-4cd07ef3d268\.netlify\.app\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

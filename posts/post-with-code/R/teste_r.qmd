@@ -10,10 +10,10 @@ format: "html"
 # Este é um codigo simples em R para testar a execusão do quarto
 
 
-````
+````{r}
 
 show("hello world")
-
+install.packages("tidyverse")
 library(ggplot2)
 summary(CO2)
 
@@ -24,7 +24,7 @@ ggplot(CO2, aes(Treatment, uptake)) +
 
 ### por algum motivo infelizmente eu não consigo rodar o ggplot2 apenas chamando a biblioteca mãe, como o tydyverse. acontece um erro na execussão
 
-````
+````{r}
 show("hello world")
 
 library(tydyverse)
