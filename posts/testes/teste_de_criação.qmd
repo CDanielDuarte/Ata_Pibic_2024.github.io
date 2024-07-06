@@ -1,5 +1,11 @@
 ---
-title: "24.05.24"
+title: Vim no vs code
+date: 2024-05-06
+author: Duarte C.D.M
+Categories: ["Vim"]
+format: 
+        html: default
+        pdf: default
 ---
 
 # teste de criação de conteudo

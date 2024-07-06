@@ -2,19 +2,24 @@
 title: "Teste com condigo em R"
 author: "Calos Daniel"
 date: "2024-05-22"
-categories: [testes]
-image: R.jpeg 
-format: "html"
+categories: [testes, R]
+format: 
+        html: default
+        pdf: default
 ---
 
 # Este é um codigo simples em R para testar a execusão do quarto
 
+````{r}
+library(ggplot2)
 
+ggplot(CO2, aes(Treatment, uptake)) + 
+        geom_boxplot()
 ````
 
-show("hello world")
-install.packages("tidyverse")
-library(ggplot2)
+
+````{r}
+#library(ggplot2)
 summary(CO2)
 
 ggplot(CO2, aes(Treatment, uptake)) +
