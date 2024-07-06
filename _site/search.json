@@ -137,7 +137,7 @@
     "href": "index.html",
     "title": "Ata Bioinfo",
     "section": "",
-    "text": "Git e Git hub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRna-seq\n\n\n\n\n\n\nSequenciamento\n\n\nTranscriptoma\n\n\n\n\n\n\n\n\n\nJul 1, 2024\n\n\nCarlos Daniel M Duarte\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de teceira geração, PacBIO\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequenciamento de primeira geração\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de terceira geração / Nanopore\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFundamentos do NGS\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\niris\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 27, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R\n\n\n\n\n\n\ntestes\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em python\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R\n\n\n\n\n\n\ntestes\n\n\nR\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nVim no vs code\n\n\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Git e Git hub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRna-seq\n\n\n\n\n\n\nSequenciamento\n\n\nTranscriptoma\n\n\n\n\n\n\n\n\n\nJul 1, 2024\n\n\nCarlos Daniel M Duarte\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de teceira geração, PacBIO\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequenciamento de primeira geração\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSequênciamento de terceira geração / Nanopore\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFundamentos do NGS\n\n\n\n\n\n\nSequenciamento\n\n\n\n\n\n\n\n\n\nJun 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\niris\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 27, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em R\n\n\n\n\n\n\ntestes\n\n\nR\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCalos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nTeste com condigo em python\n\n\n\n\n\n\ntestes\n\n\npython\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nCarlos Daniel\n\n\n\n\n\n\n\n\n\n\n\n\nVim no vs code\n\n\n\n\n\n\n\n\n\n\n\nMay 6, 2024\n\n\nDuarte C.D.M\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/R/teste_r.html",
@@ -278,5 +278,12 @@
     "title": "Fundamentos do NGS",
     "section": "Seqênciamento Ion Torrent",
     "text": "Seqênciamento Ion Torrent\nTodas essas beads serão inseridas em um chip com 11 milhões de poços, os quais so cabem uma bead por poço. O sinal detectado pela maquina é a variação de Ph que é criado quando um nucleotídeo é incorporado pela dna polimeraze, sempre que acontece essa incorporação é liberado uma molécula de pirofostato e um atomo de hideogenio. o quê é detectável pela maquina. Isso é possivel pois a maquina consegue tira e botar um nucleotídeo por vez\n\n\n\nIncorporação de nucçeptídeo\n\n\n\n\n\nSequênciamento Thermo ficher"
+  },
+  {
+    "objectID": "posts/git-github/git-github.html#atualizar-o-codigo-no-github",
+    "href": "posts/git-github/git-github.html#atualizar-o-codigo-no-github",
+    "title": "Git e Git hub",
+    "section": "Atualizar o codigo no Github",
+    "text": "Atualizar o codigo no Github\nPara mandar os arquivos dentro para o GitHub é o sequinte codigo\ngit push origin main"
   }
 ]

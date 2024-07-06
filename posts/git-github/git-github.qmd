@@ -36,3 +36,10 @@ git commit -m "A teg -m se refere a uma mensagem a qual será guardada junto com
 ````
 git branch -M "main"
 ````
+## Atualizar o codigo no Github
+
+Para mandar os arquivos dentro para o GitHub é o sequinte codigo
+
+````{bash}
+git push origin main
+````

@@ -1,0 +1,12 @@
+{
+  "hash": "7434172df8ed65e7d282cfbf138638c4",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\n\n\n---\n\n\n\n\n# Git e Git hub\n\nÉ uma ferramenta de controle de versão se codigo baseado em resitórios\n\n\n# flow\nPara começar o uso é preciso criar uma pasta  `.git` a qual guardará todas as versões de codigo dentro da pasta princial. ou seja é uma pasta dentro de outra, o qual esta é especial pois possue todas as configurações e informações necessárias para  o controle de versão\n \n````\ngit init\n````\n## Adicionando codigos ao stading\n\nO `stading` é um local o qual o codigo fica esperando para ser comitado, ou seja é uma pre salvagem de arquivo\n\n````\ngit  add Nome-do-arquivo\ngit status # esse codigo mostrará as alterações\n\n````\n\n## Commit\n\nÈ o processo de verdadeiramente salvar as alterações do seu codigo no git\n\n````\ngit commit -m \"A teg -m se refere a uma mensagem a qual será guardada junto com o codigo\"\n````\n## Renomear a branch \n\n````\ngit branch -M \"main\"\n````\n## Atualizar o codigo no Github\n\nPara mandar os arquivos dentro para o GitHub é o sequinte codigo\n\n\n\n\n````{bash}\ngit push origin main\n````\n\n",
+    "supporting": [
+      "git-github_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
