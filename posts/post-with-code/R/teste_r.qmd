@@ -5,7 +5,8 @@ date: "2024-05-22"
 categories: [testes, R]
 format: 
         html: default
-        pdf: default
+        #pdf: default
+ # aa       
 ---
 
 # Este é um codigo simples em R para testar a execusão do quarto
