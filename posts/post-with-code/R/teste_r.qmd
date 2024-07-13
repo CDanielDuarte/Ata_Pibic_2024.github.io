@@ -6,7 +6,6 @@ categories: [testes, R]
 format: 
         html: default
         #pdf: default
- # aa       
 ---
 
 # Este é um codigo simples em R para testar a execusão do quarto

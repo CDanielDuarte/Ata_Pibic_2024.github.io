@@ -235,7 +235,7 @@
     "href": "posts/Sequênciamento/Rna-seq/rna-seq.html",
     "title": "Rna-seq",
     "section": "",
-    "text": "Sequênciamento de RNA\nO sequênciamento de RNA.."
+    "text": "O sequênciamento de RNA é uma das melhores técnicas de análise de trascriptoma, junto com single-cell, superaram as limitações dos microarrays. Ela é baseada em um processo de conversão e preparo de biblioteca para os transcritos de RNA se transformarem em cDNA, assim possibilitando o encaixe nas tecnicas de sequenciamento, com NGS.\n\n\nEste passo é essencial para se obter a amostra de RNA, é possível a extração por diversos métodos e assim como a filtração o objetivo é enrriquecer a amostra, ou já na extração com um kit de extração alvo expecífico, como mirvana para microRNAs, ou Fenol-cloroformio para RNA total, ou beads magnéticas.\nÉ comum que a extração seja feita com 2 kits, um que extraia RNA total e outro que extraia apenas os alvos os quais sejam de interrese para sua pergunta biológica. Por exemplo, a maioria dos RNAs presentes em uma amostra são rRNAs(RNAs ribossomais) os quais talvez não sejam tão úteis dependendo da sua pergunta. Então é aplicado um kit que é capaz de remover este tipo de RNA, como um baseado em beads magnéticas.\n\n\n\nTrabalho em RNA-seq\n\n\n\n\n\nA maioria dos laboratórios possue o sequenciamento baseado em tecnologias da segunda geração (NGS). As quais é necessário a fragmentação do alvos para que seja possível a análise, normalmente entre 200-250bp. Isto pode ser feito com uma RNAase ou sonicação, assim gerando fragmentos compatíveis a tecnologia.\n\n\n\nfragmentação\n\n\n\n\nÉ necessário o controle de qualidade da fragmentação pois caso isso for perdido, os fragmentos de interrese não poderão ser sequenciados, assim perdendo o propósito da análise. Dois principais métodos são aplicados para este fim, como a flororímeria e PCR por capilar. PCR a qual é semelhante ao mecanismo explicado no sequenciamento Sanguer, cujo é feito a análise de onde estão os maiores porções dos fragmentos da amostra.\n\n\n\nGráfico do bioanalyzer\n\n\n\n\n\n\nAs bibliotecas de Transcriptoma tem que ser convertidas em cDNA para serem compatíveis com a tecnologia, devem ter o sentido da fita conservado 5' -&gt; 3' e 3' -&gt; 5', pois é interresante para a análise. Assim como um indentificador de amostra, porém esse indentificador pode ou não ser feito nesta etapa, pois o preparo da biblioteca para o sequenciamento de DNA (Sanger,NGS, Nanopore e PacBio), também possue a etapa de indentificação de amostra.\nPara a conservação do sentido da fita de RNA é adicionado dois fragmentos de DNAds com sequencias conhecidas as pontas do fragmento, assim é possível saber o sentido pois digamos que a sequencia AATCCG corresponde sempre ao sentido 5' e GGAAC sempre corresponde ao sentido 3', Dependendo da ordem a qual o fragmento é sequenciado, é possível a indentificação no inicio da fita. Estes fragmentos são adicionados e grudados com uma ligase.\n\nO quê é feito para que os fragmentos indentificadores de sentido não se grudem em ambas as extremidades da fita ?\n\nAlém disso, para a conversão de RNA em cDNA, nesse fragmentos é adicionado outra fita complementar a sequencia dos indentificadores, os quais se pareiam ma parte inical e final dos indentificadores, assim impedinfo que os mesmos fragmentos indentificadores se grudem na mesma fita, criando um indentificador 3' -&gt; 3'. Os primeres são randômicos , portanto são capases de converter qualquer sequencia de RNA em cDNA.\n\n\n\nPreparo de biblioteca\n\n\n\n\n\nO sequênciamento é geralmente feito por NGS, porém é possível por outros métodos. Em relação ao NGS, é necessário seguir todos os passos necessários para o encaixe á tecnologia.\n\n\n\nSequenciamento"
   },
   {
     "objectID": "posts/Sequênciamento/NGS/ngs.html",
@@ -285,5 +285,33 @@
     "title": "Git e Git hub",
     "section": "Atualizar o codigo no Github",
     "text": "Atualizar o codigo no Github\nPara mandar os arquivos dentro para o GitHub é o sequinte codigo\ngit push origin main"
+  },
+  {
+    "objectID": "posts/Sequênciamento/Rna-seq/rna-seq.html#extração-e-filtragem-do-rna",
+    "href": "posts/Sequênciamento/Rna-seq/rna-seq.html#extração-e-filtragem-do-rna",
+    "title": "Rna-seq",
+    "section": "",
+    "text": "Este passo é essencial para se obter a amostra de RNA, é possível a extração por diversos métodos e assim como a filtração o objetivo é enrriquecer a amostra, ou já na extração com um kit de extração alvo expecífico, como mirvana para microRNAs, ou Fenol-cloroformio para RNA total, ou beads magnéticas.\nÉ comum que a extração seja feita com 2 kits, um que extraia RNA total e outro que extraia apenas os alvos os quais sejam de interrese para sua pergunta biológica. Por exemplo, a maioria dos RNAs presentes em uma amostra são rRNAs(RNAs ribossomais) os quais talvez não sejam tão úteis dependendo da sua pergunta. Então é aplicado um kit que é capaz de remover este tipo de RNA, como um baseado em beads magnéticas.\n\n\n\nTrabalho em RNA-seq"
+  },
+  {
+    "objectID": "posts/Sequênciamento/Rna-seq/rna-seq.html#fragmentação",
+    "href": "posts/Sequênciamento/Rna-seq/rna-seq.html#fragmentação",
+    "title": "Rna-seq",
+    "section": "",
+    "text": "A maioria dos laboratórios possue o sequenciamento baseado em tecnologias da segunda geração (NGS). As quais é necessário a fragmentação do alvos para que seja possível a análise, normalmente entre 200-250bp. Isto pode ser feito com uma RNAase ou sonicação, assim gerando fragmentos compatíveis a tecnologia.\n\n\n\nfragmentação\n\n\n\n\nÉ necessário o controle de qualidade da fragmentação pois caso isso for perdido, os fragmentos de interrese não poderão ser sequenciados, assim perdendo o propósito da análise. Dois principais métodos são aplicados para este fim, como a flororímeria e PCR por capilar. PCR a qual é semelhante ao mecanismo explicado no sequenciamento Sanguer, cujo é feito a análise de onde estão os maiores porções dos fragmentos da amostra.\n\n\n\nGráfico do bioanalyzer"
+  },
+  {
+    "objectID": "posts/Sequênciamento/Rna-seq/rna-seq.html#preparo-da-biblíoteca",
+    "href": "posts/Sequênciamento/Rna-seq/rna-seq.html#preparo-da-biblíoteca",
+    "title": "Rna-seq",
+    "section": "",
+    "text": "As bibliotecas de Transcriptoma tem que ser convertidas em cDNA para serem compatíveis com a tecnologia, devem ter o sentido da fita conservado 5' -&gt; 3' e 3' -&gt; 5', pois é interresante para a análise. Assim como um indentificador de amostra, porém esse indentificador pode ou não ser feito nesta etapa, pois o preparo da biblioteca para o sequenciamento de DNA (Sanger,NGS, Nanopore e PacBio), também possue a etapa de indentificação de amostra.\nPara a conservação do sentido da fita de RNA é adicionado dois fragmentos de DNAds com sequencias conhecidas as pontas do fragmento, assim é possível saber o sentido pois digamos que a sequencia AATCCG corresponde sempre ao sentido 5' e GGAAC sempre corresponde ao sentido 3', Dependendo da ordem a qual o fragmento é sequenciado, é possível a indentificação no inicio da fita. Estes fragmentos são adicionados e grudados com uma ligase.\n\nO quê é feito para que os fragmentos indentificadores de sentido não se grudem em ambas as extremidades da fita ?\n\nAlém disso, para a conversão de RNA em cDNA, nesse fragmentos é adicionado outra fita complementar a sequencia dos indentificadores, os quais se pareiam ma parte inical e final dos indentificadores, assim impedinfo que os mesmos fragmentos indentificadores se grudem na mesma fita, criando um indentificador 3' -&gt; 3'. Os primeres são randômicos , portanto são capases de converter qualquer sequencia de RNA em cDNA.\n\n\n\nPreparo de biblioteca"
+  },
+  {
+    "objectID": "posts/Sequênciamento/Rna-seq/rna-seq.html#sequenciamento",
+    "href": "posts/Sequênciamento/Rna-seq/rna-seq.html#sequenciamento",
+    "title": "Rna-seq",
+    "section": "",
+    "text": "O sequênciamento é geralmente feito por NGS, porém é possível por outros métodos. Em relação ao NGS, é necessário seguir todos os passos necessários para o encaixe á tecnologia.\n\n\n\nSequenciamento"
   }
 ]
