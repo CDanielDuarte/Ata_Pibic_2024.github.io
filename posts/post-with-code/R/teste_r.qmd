@@ -10,7 +10,7 @@ format:
 
 # Este é um codigo simples em R para testar a execusão do quarto
 
-````{r}
+````
 library(ggplot2)
 
 ggplot(CO2, aes(Treatment, uptake)) + 
@@ -18,7 +18,7 @@ ggplot(CO2, aes(Treatment, uptake)) +
 ````
 
 
-````{r}
+````
 #library(ggplot2)
 summary(CO2)
 
