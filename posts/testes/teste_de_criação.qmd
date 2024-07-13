@@ -5,7 +5,7 @@ author: Duarte C.D.M
 Categories: ["Vim"]
 format: 
         html: default
-        pdf: default
+ #       pdf: default
 ---
 
 # teste de criação de conteudo
