@@ -18,8 +18,8 @@ ggplot(CO2, aes(Treatment, uptake)) +
 ````
 
 
-````
-#library(ggplot2)
+````{R}
+library(ggplot2)
 summary(CO2)
 
 ggplot(CO2, aes(Treatment, uptake)) +
@@ -29,7 +29,7 @@ ggplot(CO2, aes(Treatment, uptake)) +
 
 ### por algum motivo infelizmente eu não consigo rodar o ggplot2 apenas chamando a biblioteca mãe, como o tydyverse. acontece um erro na execussão
 
-````
+````{R}
 show("hello world")
 
 library(tydyverse)
