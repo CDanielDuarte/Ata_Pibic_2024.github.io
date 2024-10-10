@@ -1,0 +1,19 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/git-github/git-github.html",
+      "/posts/nextflow/out-24/digram.html",
+      "/posts/Sequênciamento/Rna-seq/rna-seq.html",
+      "/posts/Sequênciamento/Pacbio_seq/pacbio.html",
+      "/posts/Sequênciamento/Sanger/sanger.html",
+      "/posts/Sequênciamento/Nanopore/Nanopore.html",
+      "/posts/Sequênciamento/NGS/ngs.html",
+      "/posts/post-with-code/python/iris.html",
+      "/posts/testes/teste_r.html",
+      "/posts/post-with-code/python/teste_py.html",
+      "/posts/post-with-code/R/teste_r.html",
+      "/posts/testes/teste_de_criação.html"
+    ]
+  }
+]
